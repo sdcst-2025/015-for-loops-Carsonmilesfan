@@ -17,3 +17,13 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+sanders = int(input("enter an integer that is smaller than ten (it can be bigger if you want, it still works) => "))
+jerick = 0
+liechtenstein = 0
+for miles in range(sanders):
+    mile = miles + 1
+    for i in range(mile):
+        jerick = 10 ** i
+        liechtenstein = liechtenstein + jerick
+    
+print(f"the sum of the series is {liechtenstein}")

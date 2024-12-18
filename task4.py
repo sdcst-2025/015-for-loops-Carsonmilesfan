@@ -23,3 +23,28 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+jesus = 0
+ifmama = 0
+balance = int(input("what is your current credit card balance => "))
+
+for i in range(12):
+    ii = i + 1
+    notmuchtime = int(input(f"Enter total purchases for month {ii} => "))
+    quiteawhile = int(input(f"Enter total payments for month {ii} => "))
+    senorpeter = balance - quiteawhile
+    if senorpeter < 0:
+        print(f"sorry insufficient funds, using total balance ({balance})")
+        quiteawhile = balance
+        balance = 0
+    else:
+        balance = balance - quiteawhile
+    willmakehersmile = notmuchtime - quiteawhile
+    ifmama = ifmama + willmakehersmile
+    meets = 0.02 * willmakehersmile
+    jesus = jesus + meets
+    print(f"2% interest has been charged: {jesus}")
+    balance = balance - jesus
+    print(f"your closing balance is: {balance}")
+    tonight = int(input("how much money did you make this month => "))
+    balance = balance + tonight
+

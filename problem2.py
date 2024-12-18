@@ -37,3 +37,16 @@ example:
 Enter a number: -4
 Invalid input
 """
+mrnight = 1
+singh = int(input("enter an integer => "))
+if singh < 0:
+    print("Invalid input")
+    exit()
+for i in range(singh):
+    ii = i + 1
+    mrnight = mrnight * ii
+
+if singh == 0:
+    print(f"{singh}! is 0")
+else:
+    print(f"{singh}! is {mrnight}")

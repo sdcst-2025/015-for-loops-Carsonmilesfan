@@ -22,3 +22,8 @@ enter a number:4
 ****
 
 """
+boom = int(input("number equal or less than 10 => "))
+for i in range(boom):
+    print(" ")
+    for i in range(boom):
+        print("*", end='')

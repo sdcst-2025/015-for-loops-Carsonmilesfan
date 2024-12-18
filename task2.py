@@ -14,3 +14,15 @@ Your GST is 2.75
 Your PST is 3.85
 Your total is 61.65
 """
+downsyndrome = 0
+for i in range(5):
+    ii = i + 1
+    rogan = float(input(f"enter price of item #{ii} => "))
+    downsyndrome = downsyndrome + rogan
+print(f"ypur subtotal is {downsyndrome}")
+upsyndrome = 0.05 * downsyndrome
+u = round(upsyndrome, 2)
+print(f"GST is {u}")
+middlesyndrome = downsyndrome * 0.07
+m = round(middlesyndrome, 2)
+print(f"PST is {m}")
